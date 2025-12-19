@@ -44,7 +44,7 @@ A full-stack task management application built with Django REST Framework and Re
 ## 📁 Project Structure
 
 ```
-task-manager/
+Tasker/
 ├── backend/
 │   ├── task_manager/          # Django project settings
 │   ├── tasks/                 # Tasks app
@@ -79,7 +79,7 @@ task-manager/
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/SahilSuman1011/Task-Manager-Service>
 cd tasker
 ```
 
