@@ -74,6 +74,14 @@ task-manager/
 - Node.js 18+
 - pip
 - npm
+- Git
+
+### Clone Repository
+
+```bash
+git clone <repository-url>
+cd tasker
+```
 
 ### Backend Setup
 
