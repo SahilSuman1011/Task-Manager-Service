@@ -291,15 +291,40 @@ pytest tasks/tests/test_models.py
 pytest tasks/tests/test_models.py::TestTaskModel::test_create_task
 ```
 
+### Run with Verbose Output
+```bash
+pytest -v
+```
+
+### Run with Coverage Report
+```bash
+pytest --cov=tasks --cov-report=term-missing
+```
+
 ### Test Summary
 
-The project includes 12 unit tests covering:
-- ✅ Model validation and behavior
-- ✅ Serializer validation
+The project includes **37 comprehensive tests** covering:
+
+**Unit Tests (12 tests):**
+- ✅ Model validation and behavior (2 tests)
+- ✅ Serializer validation and data transformation (10 tests)
 - ✅ Field validation (title, priority, status)
 - ✅ Computed fields (is_overdue)
 - ✅ Create and update operations
 - ✅ Error handling
+
+**Integration Tests (25 tests):**
+- ✅ API Endpoints - List, Create, Retrieve, Update, Delete (8 tests)
+- ✅ Filtering - By status, priority, search query (4 tests)
+- ✅ Pagination - First page, second page, invalid page (3 tests)
+- ✅ Custom Actions - mark_done, mark_in_progress, summary (3 tests)
+- ✅ Computed Fields - is_overdue with various scenarios (3 tests)
+- ✅ Error Responses - 404 handling, validation errors (4 tests)
+
+**Test Files:**
+- `tasks/tests/test_models.py` - Model tests
+- `tasks/tests/test_serializers.py` - Serializer tests
+- `tasks/tests/test_views.py` - API endpoint integration tests
 
 ##  Configuration
 
