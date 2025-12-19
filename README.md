@@ -2,6 +2,8 @@
 
 A full-stack task management application built with Django REST Framework and React.
 
+![alt text](image.png)
+
 ## 📋 Table of Contents
 
 - [Features](#features)
