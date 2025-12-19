@@ -369,7 +369,7 @@ Tasks can be filtered by:
 - Title: Required, minimum 3 characters
 - Priority: Must be between 1-5
 - Status: Must be one of: todo, in_progress, done
-- Due date: Cannot be in the past (for new tasks)
+- Due date: Optional field
 
 ### Computed Fields
 - `is_overdue`: Automatically calculated based on due_date and status
